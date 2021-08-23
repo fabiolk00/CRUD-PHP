@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CRUD</title>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+
+
+        <style type="text/css">
+          #containerpage{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
+          form{
+            margin-top: 9.5rem;
+          }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="containerpage">
+
+          <form action="inserirproduto.php" method="POST">
+
+            <div class="mb-3">
+              <label>Nome produto</label>
+                <input type="text" class="form-control" name="productname" placeholder="Nome do produto" required autocomplete="off">
+            </div>
+
+            <div class="mb-3" >
+              <label>Número do produto</label>
+                <input type="number" class="form-control" name="productnumber"placeholder="Número do produto" required autocomplete="off">
+            </div>
+
+            <div class="mb-3">
+                <label>Preço</label>
+                  <input type="number" class="form-control" name ="productprice" placeholder="Valor do produto" required autocomplete="off">
+            </div>
+
+
+            <div class="mb-3">
+                <label>Data de cadastro</label>
+                  <input type="date" class="form-control"  name ="productregister" placeholder="Data de cadastro" required autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-success" style="margin-left: 3rem;"> Cadastrar </button>
+          </form>                                
+        </div>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    </body>
+</html>
